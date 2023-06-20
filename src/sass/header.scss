@@ -1,0 +1,32 @@
+@import "_variables";
+
+.header {
+  padding-block: 2rem;
+
+  width: 60%;
+
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background-color: $light-accent;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4rem;
+  }
+
+  &__anchor {
+    color: $dark;
+    font-size: 2.4rem;
+  }
+
+  &__anchor:hover {
+    color: $primary-colour;
+  }
+}

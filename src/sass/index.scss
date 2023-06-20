@@ -1,0 +1,98 @@
+/*
+-------------------
+CSS SELECTOR ORDER
+-------------------
+
+-- BOX MODEL --
+margin, padding
+-- CONTENT --
+height, width
+-- POSITION --
+position, top, bottom
+-- DISPLAY --
+display, justify, align
+-- TEXT --
+color, font-size
+-- BORDER --
+border-radius
+-- STYLE --
+*/
+
+@import "variables";
+@import "header";
+@import "hero";
+@import "about";
+@import "projects";
+@import "contact";
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+
+html {
+  font-size: 62.5%;
+  font-family: "Inconsolata", monospace;
+
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $dark;
+  font-size: 2.4rem;
+
+  background-color: $light;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.25s;
+
+  &:visited {
+    color: $dark;
+  }
+  &:hover {
+    color: $primary-colour;
+
+    transition: 0.15s;
+  }
+}
+
+h1 {
+  font-size: 6.4rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+.global-padding {
+  padding-inline: 20%;
+}
+
+.title-highlight {
+  color: $primary-colour;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.page-title-wrapper {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transition: opacity 1.4s ease-out, transform 0.8s ease-out;
+}

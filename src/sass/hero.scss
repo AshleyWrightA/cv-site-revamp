@@ -1,0 +1,32 @@
+@import "_variables";
+
+.hero {
+  padding-block: 28rem 64rem;
+
+  &__container {
+    margin-left: 2vw;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 9.6rem;
+    }
+  }
+
+  &__dynamic-text-container {
+    width: 80vw;
+
+    display: flex;
+  }
+
+  &__intro {
+    padding-top: 4rem;
+  }
+}
+
+.typed-cursor {
+  align-self: center;
+  font-size: 8rem;
+  font-style: italic;
+}

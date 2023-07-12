@@ -3,17 +3,17 @@ import Typed from "typed.js";
 export function dynamicText() {
   const dynamicTextConfig = {
     strings: [
+      "Problem Solver 🙌",
       "College Graduate 🎓",
-      "Techie 👩‍💻",
-      "BoardGame Geek ♟️",
-      "History Buff 📖",
-      "Web Developer 📱 + 🖱️",
-      "Game Master 🎲",
       "Cat Mom 🐱",
+      "Web Developer 📱 + 🖱️",
       "Coffee Addict ☕",
+      "History Buff 📖",
+      "Techie 👩‍💻",
+      "Game Master 🎲",
       "Google-fu Master ⌨️",
       "Green Thumb 🌱",
-      "Problem Solver 🙌",
+      "BoardGame Geek ♟️",
     ],
     typeSpeed: 80,
     backSpeed: 80,

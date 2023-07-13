@@ -2,12 +2,12 @@
 
 .projects {
   padding-block: 0 4rem;
-}
 
-.projects__projects-container {
-  display: grid;
-  grid: 1fr / 1fr;
-  gap: 4rem;
+  &__projects-container {
+    display: grid;
+    grid: 1fr / 1fr;
+    gap: 4rem;
+  }
 }
 
 .project {
@@ -19,12 +19,13 @@
   background-color: $light-accent;
 
   border-radius: 1.6rem;
-  border: 2px solid $primary-colour;
+  border: 1px solid $primary-colour;
+  box-shadow: 0 0 10px $primary-colour;
 
   &__display {
-    height: 360px;
+    max-width: 60%;
 
-    border-radius: 1.6rem;
+    border-radius: 1.2rem;
   }
 
   &__display-source {
@@ -94,5 +95,24 @@
   }
   100% {
     -webkit-transform: translateY(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    &__info-header {
+      font-size: 2rem;
+    }
+    &__info-box {
+      padding: 2rem;
+      gap: 2rem;
+    }
+    &__info-button-container a {
+      padding: 0.5rem;
+      border-radius: 1.2rem;
+    }
+    &__display {
+      max-width: 50%;
+    }
   }
 }

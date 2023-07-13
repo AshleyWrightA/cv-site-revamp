@@ -19,11 +19,15 @@ border-radius
 */
 
 @import "variables";
-@import "header";
-@import "hero";
-@import "about";
-@import "projects";
-@import "contact";
+
+// IMPORTS USED ONLY ON DEPLOYMENT
+// IMPORTED DIRECTLY INTO INDEX.HTML DURING DEVELOPMENT
+
+// @import "header";
+// @import "hero";
+// @import "about";
+// @import "projects";
+// @import "contact";
 
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
@@ -95,4 +99,22 @@ h2 {
 .fade-in-section {
   opacity: 0;
   transition: opacity 1.4s ease-out, transform 0.8s ease-out;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+
+  .global-padding {
+    padding-inline: 8%;
+  }
 }

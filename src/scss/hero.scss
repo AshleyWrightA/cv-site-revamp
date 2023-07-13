@@ -28,3 +28,20 @@
   font-size: 8rem;
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    &__container {
+      h1 {
+        font-size: 4.8rem;
+        text-align: center;
+      }
+    }
+    &__dynamic-text-container {
+      display: block;
+    }
+  }
+  span {
+    display: none;
+  }
+}

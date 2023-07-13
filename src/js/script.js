@@ -57,3 +57,20 @@ export function fadeInSection() {
     window.scrollTo(0, 0);
   };
 }
+
+// Function to check the screen size and remove class
+export function checkScreenSize() {
+  var screenWidth =
+    window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var element = document.querySelector("header");
+
+  if (screenWidth < 768) {
+    element.classList.remove("global-padding");
+  } else {
+    element.classList.add("global-padding"); // Add the class back if the screen size is 768px or larger
+  }
+
+  window.addEventListener("resize", checkScreenSize);
+}
+
+// Add an event listener to check the screen size whenever the window is resized

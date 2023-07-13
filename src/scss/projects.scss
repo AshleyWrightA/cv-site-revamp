@@ -116,3 +116,17 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .project {
+    flex-direction: column;
+
+    &__info-box {
+      width: auto;
+    }
+
+    &__display {
+      max-width: 100%;
+    }
+  }
+}

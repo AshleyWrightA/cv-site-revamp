@@ -74,4 +74,19 @@
 }
 
 @media (max-width: 768px) {
+  .form {
+    width: 50vw;
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    &__anchor {
+      font-size: 12rem;
+    }
+  }
 }

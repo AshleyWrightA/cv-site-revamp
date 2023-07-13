@@ -14,7 +14,6 @@
   &__header-skill {
     padding: 6rem 0 4rem 0;
 
-    font-size: 3.6rem;
     font-weight: bold;
   }
 
@@ -88,14 +87,27 @@
     &__group {
       margin: 0;
     }
-    &__icon-header {
-      font-size: 2.4rem;
-    }
     &__icon {
       font-size: 12rem;
     }
     &__element iconify-icon {
       font-size: 3.6rem;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    &__skill-container {
+      grid: 1fr / 1fr;
+    }
+  }
+
+  .skill {
+    &__icon {
+      font-size: 8rem;
+    }
+    &__icon-header {
     }
   }
 }

@@ -36,3 +36,11 @@
     width: 100%;
   }
 }
+
+@media (max-width: 576px) {
+  .header {
+    &__nav {
+      gap: 2rem;
+    }
+  }
+}

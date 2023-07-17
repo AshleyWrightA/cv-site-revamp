@@ -69,8 +69,6 @@ export function checkScreenSize() {
   } else {
     element.classList.add("global-padding"); // Add the class back if the screen size is 768px or larger
   }
-
-  window.addEventListener("resize", checkScreenSize);
 }
 
 // Add an event listener to check the screen size whenever the window is resized

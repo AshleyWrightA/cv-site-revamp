@@ -1,6 +1,6 @@
 export default {
   // Base public path when served in production
-  base: "/cv-site-revamp/",
+  base: "/",
 
   // Build output configuration
   build: {

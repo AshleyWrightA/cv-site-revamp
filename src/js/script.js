@@ -71,4 +71,16 @@ export function checkScreenSize() {
   }
 }
 
-// Add an event listener to check the screen size whenever the window is resized
+export function setModal() {
+  const modal = document.querySelector(".modal-bg");
+  const modalOpen = document.querySelector(".modal-open");
+  const modalClose = document.querySelector(".modal-close");
+
+  modalOpen.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+
+  modalClose.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+}

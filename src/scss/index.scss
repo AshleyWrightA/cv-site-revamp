@@ -46,8 +46,14 @@ body {
   background-color: $light;
 }
 
-a {
+a,
+button {
+  color: $dark;
+  font-family: "Inconsolata", monospace;
+  font-size: 2.4rem;
+
   text-decoration: none;
+
   transition: 0.25s;
 
   &:visited {
@@ -99,6 +105,35 @@ h2 {
 .fade-in-section {
   opacity: 0;
   transition: opacity 1.4s ease-out, transform 0.8s ease-out;
+}
+
+.modal-bg {
+  width: 100%;
+  height: 100%;
+
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  position: fixed;
+  z-index: 1;
+}
+
+.modal {
+  padding: 4rem;
+
+  width: 25%;
+
+  display: flex;
+
+  border-radius: 1rem;
+  border: $dark 2px solid;
+
+  background-color: $light-accent;
+
+  left: 35%;
+  top: 35%;
+  position: fixed;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {

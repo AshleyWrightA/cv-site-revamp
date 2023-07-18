@@ -17,6 +17,17 @@
   </head>
   <body>
     <script type="module" type="application/javascript" src="./src/js/index.js"></script>
+    <div class="modal-bg">
+      <div class="modal">
+        <div>
+          <h2>Modal Content</h2>
+          <p>This is the content of the modal.</p>
+        </div>
+        <div>
+          <button class="modal-close">X</button>
+        </div>
+      </div>
+    </div>
     <header class="header global-padding" id="header">
       <a href="#hero" class="header__anchor">
         <div class="header__logo title-wrapper">
@@ -90,6 +101,10 @@
               <p>React</p>
               <iconify-icon icon="logos:react"></iconify-icon>
             </div>
+            <div class="skill__element">
+              <p>Bootstrap</p>
+              <iconify-icon icon="logos:bootstrap"></iconify-icon>
+            </div> 
           </div>
         </div>
         <div class="skill__group">
@@ -115,10 +130,6 @@
               <iconify-icon icon="logos:webpack"></iconify-icon>
             </div>
             <div class="skill__element">
-              <p>Docker</p>
-              <iconify-icon icon="logos:docker-icon"></iconify-icon>
-            </div>
-            <div class="skill__element">
               <p>Photoshop</p>
               <iconify-icon icon="logos:adobe-photoshop"></iconify-icon>
             </div>
@@ -136,6 +147,7 @@
         <h1 class="project__header title-highlight">Projects&#47;&gt;</h1>
       </div>
       <div class="projects__projects-container">
+        <!--PROJECT-->
         <div class="project project__name-storefront fade-in-section">
           <video class="project__display" autoplay loop muted>
             <source class="project__display-source" type="video/webm" src="./src/assets/storefront.webm">
@@ -151,12 +163,13 @@
               <iconify-icon icon="logos:firebase"></iconify-icon>
             </div>
             <div class="project__info-button-container">
-              <a href="">Live Demo</a>
-              <a href="">Code</a>
-              <a class="project__info-button" href="">Info</a>
+              <a href="https://ashleywrighta.github.io/shoe-store/">Live Demo</a>
+              <a href="https://github.com/AshleyWrightA/shoe-store">Code</a>
+              <button class="project__info-button modal-open">Info</a>
             </div>
           </div>
         </div>
+        <!--PROJECT-->
         <div class="project project__name-forms fade-in-section">
           <img class="project__display project__display-forms" src="./src/assets/forms.webp">
           <div class="project__info-box">
@@ -175,6 +188,7 @@
             </div>
           </div>
         </div> 
+        <!--PROJECT-->
         <div class="project project__name-portfolio fade-in-section">
           <img class="project__display project__display-portfolio" src="./src/assets/portfolio.webp"></video>
           <div class="project__info-box">
@@ -210,14 +224,15 @@
       </div>
       <div class="contact__forms">
         <h2>Send a Message</h2>
-          <form class="contact__form">
+          <form class="contact__form" action="https://formsubmit.co/eab4df2584c1e151ef873e97737c5bc5" method="POST">
+            <input type="hidden" name="_subject" value="CV Site Email">
             <div class="form__container">
               <label for="name">Full Name</label>
               <input class="form" type="text" id="name">
             </div>
             <div class="form__container">
-            <label for="email">Email</label>
-            <input class="form" type="emai" id="email">
+              <label for="email">Email</label>
+              <input class="form" type="emai" id="email" name="email" required>
             </div>
             <div class="form__container">
               <label for="message">Message</label>

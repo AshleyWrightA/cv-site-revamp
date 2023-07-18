@@ -54,10 +54,13 @@
     color: $primary-colour;
   }
 
-  &__info-button-container a {
+  &__info-button-container a,
+  &__info-button-container button {
     padding: 1rem;
 
     font-weight: bold;
+
+    background-color: $light-accent;
 
     border-radius: 1.6rem;
     border: $dark 3px solid;
@@ -107,7 +110,8 @@
       padding: 2rem;
       gap: 2rem;
     }
-    &__info-button-container a {
+    &__info-button-container a,
+    &__info-button-container button {
       padding: 0.5rem;
       border-radius: 1.2rem;
     }
@@ -127,6 +131,10 @@
 
     &__display {
       max-width: 100%;
+    }
+    &__info-button-container a,
+    &__info-button-container button {
+      font-size: 1.6rem;
     }
   }
 }

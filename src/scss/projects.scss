@@ -54,6 +54,20 @@
     color: $primary-colour;
   }
 
+  &__in-progress {
+    padding-block: 1rem;
+    padding-inline: 4rem;
+
+    font-style: italic;
+    font-weight: bold;
+
+    border-radius: 1.2rem;
+    background-color: $primary-colour;
+
+    position: fixed;
+    bottom: 0%;
+  }
+
   &__info-button-container a,
   &__info-button-container button {
     padding: 1rem;
@@ -70,11 +84,9 @@
       background-color: $light;
       border: $primary-colour 3px solid;
       transition: 0.15s;
+      cursor: grab;
     }
   }
-}
-
-.button-hover {
 }
 
 @keyframes info-button-bounce {

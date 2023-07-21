@@ -4,35 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./src/assets/favicon.ico" sizes="any">
-    <link rel="stylesheet" href="./src/css/meyer-reset.css">
-    <link rel="stylesheet" href="./src/css/index.min.css">
-    <link rel="stylesheet" href="./src/css/projects.min.css">
-    <link rel="stylesheet" href="./src/css/hero.min.css">
-    <link rel="stylesheet" href="./src/css/header.min.css">
-    <link rel="stylesheet" href="./src/css/contact.min.css">
-    <link rel="stylesheet" href="./src/css/about.min.css">
+    <link rel="icon" href="./src/assets/favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="./src/css/meyer-reset.css" />
+    <link rel="stylesheet" href="./src/css/index.min.css" />
+    <link rel="stylesheet" href="./src/css/projects.min.css" />
+    <link rel="stylesheet" href="./src/css/hero.min.css" />
+    <link rel="stylesheet" href="./src/css/header.min.css" />
+    <link rel="stylesheet" href="./src/css/contact.min.css" />
+    <link rel="stylesheet" href="./src/css/about.min.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Ashley Wright</title>
   </head>
   <body>
     <script type="module" type="application/javascript" src="./src/js/index.js"></script>
+    <!-- PROJECT MODAL -->
     <div class="modal-bg">
       <div class="modal">
         <div>
-          <h2>Modal Content</h2>
-          <p>This is the content of the modal.</p>
+          <h2 class="modal-header"></h2>
+          <p class="modal-section-1"></p>
+          <h3 class="modal-sub-header">What I learned</h3>
+          <p class="modal-section-2"></p>
+          <h3 class="modal-sub-header">What I would Add/Change</h3>
+          <p class="modal-section-3"></p>
         </div>
         <div>
           <button class="modal-close">X</button>
         </div>
       </div>
     </div>
+    <!-- HEADER -->
     <header class="header global-padding" id="header">
       <a href="#hero" class="header__anchor">
         <div class="header__logo title-wrapper">
           <h1>&lt;</h1>
-          <h1 class="header__logo title-highlight"> Ashley&nbsp; </h1>
+          <h1 class="header__logo title-highlight">Ashley&nbsp;</h1>
           <h1 class="header__logo">Wright&#47;&gt;</h1>
         </div>
       </a>
@@ -42,6 +48,7 @@
         <a href="#contact" class="header__anchor">Contact</a>
       </nav>
     </header>
+    <!-- HERO -->
     <section class="hero global-padding" id="hero">
       <div class="hero__container">
         <h1>Hello World!</h1>
@@ -58,12 +65,12 @@
         <h1 class="about__header">Me&#47;&gt;</h1>
       </div>
       <p>
-        Hello! If you're reading this, then I want to join your team! Hopefully, I can be a positive addition to both your team and your clients. I'm a Full-Stack Web Developer, college graduate and someone who has had a life-long interest in tech. 
-        
-        While I specialize in front end development I have full-stack projects for demo below!
+        Hello! If you're reading this, then I want to join your team! Hopefully, I can be a positive
+        addition to both your team and your clients. I am a Full-Stack Web Developer, college
+        graduate and someone who has had a life-long interest in tech. While I specialize in front
+        end development I have full-stack projects for demo below!
         <br />
         <br />
-
       </p>
       <h2 class="about__header-skill">&lt;Skills&#47;&gt;</h2>
       <div class="about__skill-container">
@@ -82,7 +89,7 @@
               <iconify-icon icon="logos:python"></iconify-icon>
             </div>
             <div class="skill__element">
-            <p>Java</p>
+              <p>Java</p>
               <iconify-icon icon="logos:java"></iconify-icon>
             </div>
             <div class="skill__element">
@@ -104,7 +111,7 @@
             <div class="skill__element">
               <p>Bootstrap</p>
               <iconify-icon icon="logos:bootstrap"></iconify-icon>
-            </div> 
+            </div>
           </div>
         </div>
         <div class="skill__group">
@@ -138,6 +145,7 @@
               <iconify-icon icon="logos:adobe-illustrator"></iconify-icon>
             </div>
           </div>
+        </div>
       </div>
     </section>
     <section class="projects global-padding" id="projects">
@@ -150,62 +158,133 @@
         <!--PROJECT-->
         <div class="project project__name-storefront fade-in-section">
           <video class="project__display" autoplay loop muted>
-            <source class="project__display-source" type="video/webm" src="./src/assets/storefront.webm">
+            <source
+              class="project__display-source"
+              type="video/webm"
+              src="./src/assets/storefront.webm"
+            />
           </video>
           <div class="project__info-box">
-            <h2 class="project__info-header">Store Demo</h2>
-            <p class="project__info-text">A storefront demo with a functioning cart and simple routing. Built to explore Vite as a package manager, Firebase, React Context & React Routing</p>
+            <h2 class="project__info-header">Ecommerce Demo</h2>
+            <p class="project__info-text">
+              An simple Ecommerce demo with a functioning cart, routing and fetching data from a
+              database in the cloud.
+            </p>
             <div class="project__info-icons">
               <p>Made Using:</p>
               <iconify-icon icon="logos:javascript"></iconify-icon>
-              <iconify-icon icon="logos:react"></iconify-icon> 
+              <iconify-icon icon="logos:react"></iconify-icon>
               <iconify-icon icon="skill-icons:sass"></iconify-icon>
               <iconify-icon icon="logos:firebase"></iconify-icon>
             </div>
             <div class="project__info-button-container">
               <a href="https://ashleywrighta.github.io/shoe-store/">Live Demo</a>
               <a href="https://github.com/AshleyWrightA/shoe-store">Code</a>
-              <button class="project__info-button modal-open">Info</a>
+              <button class="project__info-button modal-open storefront">Info</button>
             </div>
           </div>
         </div>
         <!--PROJECT-->
-        <div class="project project__name-forms fade-in-section">
-          <img class="project__display project__display-forms" src="./src/assets/forms.webp">
+        <div class="project project__name-jobrunner fade-in-section">
+          <p class="project__in-progress">In Progress</p>
+          <img
+            class="project__display project__display-jobrunner"
+            src="./src/assets/jobrunner.webp"
+          />
           <div class="project__info-box">
-            <h2 class="project__info-header">Web Forms & Validation</h2>
-            <p class="project__info-text">A simple demonstration of validating web forms.</p>
+            <h2 class="project__info-header">JobRunner</h2>
+            <p class="project__info-text">
+              JobRunner is a fullstack web application that is meant to track, manage and schedule
+              jobs in the vein of Jobber or Service Titan. It is being built as part of my ComIT
+              classes, and with assistance from end-users who make use of such applications for
+              field work.
+            </p>
             <div class="project__info-icons">
               <p>Made Using:</p>
               <iconify-icon icon="logos:javascript"></iconify-icon>
-              <iconify-icon icon="logos:html-5"></iconify-icon> 
-              <iconify-icon icon="logos:css-3"></iconify-icon>
+              <iconify-icon icon="logos:react"></iconify-icon>
+              <iconify-icon icon="logos:bootstrap"></iconify-icon>
+              <iconify-icon icon="logos:sass"></iconify-icon>
+              <iconify-icon icon="mdi:sql-query"></iconify-icon>
             </div>
             <div class="project__info-button-container">
-              <a href="">Live Demo</a>
-              <a href="">Code</a>
-              <a class="project__info-button" href="">Info</a>
+              <a href="https://github.com/AshWrightA/jobrunner-frontend">Code</a>
+              <button class="project__info-button modal-open jobrunner">Info</button>
             </div>
           </div>
-        </div> 
+        </div>
+        <!--PROJECT-->
+        <div class="project project__name-chartr fade-in-section">
+          <img
+            class="project__display project__display-chartr"
+            src="./src/assets/geekchartr.webp"
+          />
+          <div class="project__info-box">
+            <h2 class="project__info-header">GeekChartr</h2>
+            <p class="project__info-text">
+              GeekChartr is a personal project that tracks the daily playcounts of games on
+              BoardGameGeek and visually displays that data with graphs. It is currently incomplete
+              but the code is available for review.
+            </p>
+            <div class="project__info-icons">
+              <p>Made Using:</p>
+              <iconify-icon icon="logos:javascript"></iconify-icon>
+              <iconify-icon icon="vscode-icons:file-type-node"></iconify-icon>
+              <iconify-icon icon="logos:python"></iconify-icon>
+              <iconify-icon icon="logos:mongodb-icon"></iconify-icon>
+            </div>
+            <div class="project__info-button-container">
+              <a href="https://github.com/AshleyWrightA/bgg-chartr">Code</a>
+              <button class="project__info-button modal-open geekchartr">Info</button>
+            </div>
+          </div>
+        </div>
         <!--PROJECT-->
         <div class="project project__name-portfolio fade-in-section">
-          <img class="project__display project__display-portfolio" src="./src/assets/portfolio.webp"></video>
+          <img
+            class="project__display project__display-portfolio"
+            src="./src/assets/portfolio.webp"
+          />
           <div class="project__info-box">
             <h2 class="project__info-header">Portfolio Site</h2>
-            <p class="project__info-text">You're viewing me!</p>
+            <p class="project__info-text">
+              You're viewing me! Cheeky? Yes, but this portfolio site was built from scratch using
+              fundementals.
+            </p>
             <div class="project__info-icons">
               <p>Made Using:</p>
               <iconify-icon icon="logos:javascript"></iconify-icon>
-              <iconify-icon icon="logos:html-5"></iconify-icon> 
+              <iconify-icon icon="logos:html-5"></iconify-icon>
               <iconify-icon icon="logos:css-3"></iconify-icon>
             </div>
             <div class="project__info-button-container">
-              <a href="">Live Demo</a>
-              <a href="">Code</a>
-              <a class="project__info-button" href="">Info</a>
+              <a href="https://github.com/AshleyWrightA/cv-site-revamp">Code</a>
+              <button class="project__info-button modal-open portfolio">Info</button>
             </div>
           </div>
+        </div>
+        <!--PROJECT-->
+        <div class="project project__name-password fade-in-section">
+          <img
+            class="project__display project__display-password"
+            src="./src/assets/passwordmanager.webp"
+          />
+          <div class="project__info-box">
+            <h2 class="project__info-header">Password App</h2>
+            <p class="project__info-text">
+              A simple password manager built with python, that reads & writes data to a CSV, using
+              the tkinter library for the GUI.
+            </p>
+            <div class="project__info-icons">
+              <p>Made Using:</p>
+              <iconify-icon icon="logos:python"></iconify-icon>
+            </div>
+            <div class="project__info-button-container">
+              <a href="https://github.com/AshleyWrightA/PasswordApp">Code</a>
+              <button class="project__info-button modal-open password">Info</button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="contact global-padding" id="contact">
@@ -224,22 +303,32 @@
       </div>
       <div class="contact__forms">
         <h2>Send a Message</h2>
-          <form class="contact__form" action="https://formsubmit.co/eab4df2584c1e151ef873e97737c5bc5" method="POST">
-            <input type="hidden" name="_subject" value="CV Site Email">
-            <div class="form__container">
-              <label for="name">Full Name</label>
-              <input class="form" type="text" id="name">
-            </div>
-            <div class="form__container">
-              <label for="email">Email</label>
-              <input class="form" type="emai" id="email" name="email" required>
-            </div>
-            <div class="form__container">
-              <label for="message">Message</label>
-              <textarea class="form form__message" name="message" id="message" cols="30" rows="10"></textarea>
-            </div>
-              <input class="form__submit" type="submit" value="submit">
-          </form>
+        <form
+          class="contact__form"
+          action="https://formsubmit.co/eab4df2584c1e151ef873e97737c5bc5"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="CV Site Email" />
+          <div class="form__container">
+            <label for="name">Full Name</label>
+            <input class="form" type="text" id="name" />
+          </div>
+          <div class="form__container">
+            <label for="email">Email</label>
+            <input class="form" type="emai" id="email" name="email" required />
+          </div>
+          <div class="form__container">
+            <label for="message">Message</label>
+            <textarea
+              class="form form__message"
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <input class="form__submit" type="submit" value="submit" />
+        </form>
       </div>
     </section>
   </body>

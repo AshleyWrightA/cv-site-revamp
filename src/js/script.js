@@ -1,4 +1,5 @@
 import Typed from "typed.js";
+import data from "./data";
 
 export function dynamicText() {
   const dynamicTextConfig = {
@@ -11,7 +12,7 @@ export function dynamicText() {
       "History Buff 📖",
       "Techie 👩‍💻",
       "Game Master 🎲",
-      "Google-fu Master ⌨️",
+      "Google-fu Black Belt 🥋",
       "Green Thumb 🌱",
       "BoardGame Geek ♟️",
     ],
@@ -73,14 +74,37 @@ export function checkScreenSize() {
 
 export function setModal() {
   const modal = document.querySelector(".modal-bg");
-  const modalOpen = document.querySelector(".modal-open");
-  const modalClose = document.querySelector(".modal-close");
+  const modalOpen = document.querySelectorAll(".modal-open");
+  const modalClose = document.querySelectorAll(".modal-close");
 
-  modalOpen.addEventListener("click", () => {
-    modal.style.display = "block";
+  modalOpen.forEach((e) => {
+    e.addEventListener("click", () => {
+      modal.style.display = "flex";
+      projectInfoModal(e, data);
+    });
   });
 
-  modalClose.addEventListener("click", () => {
-    modal.style.display = "none";
+  modalClose.forEach((e) => {
+    e.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
   });
+}
+
+function projectInfoModal(sourceButton, data) {
+  // Place data into the modal
+
+  const modalHeader = document.querySelector(".modal-header");
+  const modalSectionOne = document.querySelector(".modal-section-1");
+  const modalSectionTwo = document.querySelector(".modal-section-2");
+  const modalSectionThree = document.querySelector(".modal-section-3");
+
+  for (const e in data) {
+    if (sourceButton.classList.contains(e)) {
+      modalHeader.textContent = data[e].title;
+      modalSectionOne.textContent = data[e].section_1;
+      modalSectionTwo.textContent = data[e].section_2;
+      modalSectionThree.textContent = data[e].section_3;
+    }
+  }
 }

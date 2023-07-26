@@ -27,9 +27,9 @@ export default {
   portfolio: {
     title: "Portfolio",
     section_1:
-      "This site was a complete from scratch rebuild of my old portfolio site, cleaning up the code and design. Overall it took half as much time to develop compared to my first portfolio. Almost everything is vanilla, barring my use of SCSS and a few libraries, JavaScript is used for all the dynamic elements, and i made sure my portfolio fully works both on mobile & desktop!",
+      "This site was a complete from scratch rebuild of my old portfolio site, cleaning up the code and design. Overall it took half as much time to develop compared to my first portfolio. Almost everything is vanilla, barring my use of SCSS and a few libraries, JavaScript is used for all the dynamic elements, and this portfolio fully works on mobile & desktop.",
     section_2:
-      "While this project was mostly an implementation of my existing fundementals, I learned some additional skills around deployment and using a custom domain!",
+      "While this project was mostly an implementation of my existing fundementals, I refreshed skills around web accessibility. I learned some additional skills around deployment and using a custom domain!",
     section_3: "Not much! After all, a portfolio should be solid 🙂.",
   },
   password: {

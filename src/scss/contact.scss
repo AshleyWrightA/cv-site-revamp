@@ -57,9 +57,11 @@
     width: 33%;
     padding: 1rem;
 
-    border-radius: 1.2rem;
     color: $dark;
+    font-weight: bold;
+
     border: 3px solid $dark;
+    border-radius: 1.2rem;
     background-color: transparent;
 
     transition: 0.25s;
@@ -87,6 +89,11 @@
   .contact {
     &__anchor {
       font-size: 12rem;
+    }
+  }
+  .form {
+    &__submit {
+      padding: 0.5rem;
     }
   }
 }

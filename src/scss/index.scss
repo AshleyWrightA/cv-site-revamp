@@ -47,7 +47,8 @@ body {
 }
 
 a,
-button {
+button,
+input {
   color: $dark;
   font-family: "Inconsolata", monospace;
   font-size: 2.4rem;
@@ -111,7 +112,7 @@ h2 {
   padding: 4rem;
 
   max-width: 40%;
-  height: 40%;
+  height: 45%;
 
   display: flex;
 
@@ -149,6 +150,10 @@ h2 {
     border: 3px $dark solid;
     border-radius: 1.2rem;
     background: none;
+
+    &:hover {
+      background-color: white;
+    }
   }
 }
 
@@ -176,6 +181,7 @@ h2 {
 
     &-close {
       margin-left: 1rem;
+      font-size: 2.4rem;
     }
   }
 }

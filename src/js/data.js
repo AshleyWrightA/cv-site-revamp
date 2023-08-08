@@ -18,11 +18,11 @@ export default {
   geekchartr: {
     title: "GeekChartr",
     section_1:
-      "GeekChartr is a personal project I'm hoping to finish, time permitting. Data is carefully scrapped from BoardGameGeek.com using a python script, where it is written and stored in a MongoDB database. NodeJS is used as backend and middleware, fetching and preparing the data for the front-end graph display.",
+      "Currently, GeekChartr on the frontend simply visualizes BoardGameGeek play data. However it is a fullstack application. Data is carefully scrapped using a python script, on BoardGameGeek.com, where it is stored in a cloud Mongo Database. NodeJS runs the backend on an AWS instance, fetching and preparing the data for the front-end graph display.",
     section_2:
-      "Building a basic backend and MongoDB's 'NoSQL' paradigm were the two biggest aspects of learning on this project.",
+      "Deploying and connecting each part of the application was the single biggest learning experience. Building a backend and using MongoDB's 'NoSQL' paradigm were also learning experiences.",
     section_3:
-      "Implementing a complete front-end, search functionality to find and compare different games and some form of logging in to view your personal playcounts!",
+      "Fleshing out the front-end beyond just a graph, adding search functionality to find and compare different games and some form of logging in to visualize your personal playcounts!",
   },
   portfolio: {
     title: "Portfolio",

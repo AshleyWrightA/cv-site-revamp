@@ -12,6 +12,11 @@
     display: flex;
     justify-content: center;
   }
+
+  &__link-text {
+    text-align: center;
+  }
+
   &__anchor {
     font-size: 16rem;
   }

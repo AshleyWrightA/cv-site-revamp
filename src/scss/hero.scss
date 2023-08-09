@@ -1,9 +1,11 @@
 @import "_variables";
 
 .hero {
-  padding-block: 28rem 64rem;
+  padding-block: 28rem 56rem;
 
   &__container {
+    height: 400px;
+
     display: flex;
     flex-direction: column;
 

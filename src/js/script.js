@@ -73,6 +73,7 @@ export function checkScreenSize() {
 }
 
 export function setModal() {
+  const body = document.querySelector("body");
   const modal = document.querySelector(".modal-bg");
   const modalOpen = document.querySelectorAll(".modal-open");
   const modalClose = document.querySelectorAll(".modal-close");
@@ -80,6 +81,7 @@ export function setModal() {
   modalOpen.forEach((e) => {
     e.addEventListener("click", () => {
       modal.style.display = "flex";
+      body.style.overflowY = "hidden";
       projectInfoModal(e, data);
     });
   });
@@ -87,6 +89,7 @@ export function setModal() {
   modalClose.forEach((e) => {
     e.addEventListener("click", () => {
       modal.style.display = "none";
+      body.style.overflowY = "auto";
     });
   });
 }
@@ -95,6 +98,7 @@ function projectInfoModal(sourceButton, data) {
   // Place data into the modal
 
   const modalHeader = document.querySelector(".modal-header");
+  const modalImage = document.querySelector(".modal-img");
   const modalSectionOne = document.querySelector(".modal-section-1");
   const modalSectionTwo = document.querySelector(".modal-section-2");
   const modalSectionThree = document.querySelector(".modal-section-3");
@@ -102,6 +106,8 @@ function projectInfoModal(sourceButton, data) {
   for (const e in data) {
     if (sourceButton.classList.contains(e)) {
       modalHeader.textContent = data[e].title;
+      modalImage.src = data[e].img;
+      modalImage.alt = data[e].alt;
       modalSectionOne.textContent = data[e].section_1;
       modalSectionTwo.textContent = data[e].section_2;
       modalSectionThree.textContent = data[e].section_3;

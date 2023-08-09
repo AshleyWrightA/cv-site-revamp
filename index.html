@@ -4,14 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ashley Wright Portfolio" />
     <link rel="icon" href="./src/assets/favicon.ico" sizes="any" />
     <link rel="stylesheet" href="./src/css/meyer-reset.css" />
     <link rel="stylesheet" href="./src/css/index.min.css" />
-    <link rel="stylesheet" href="./src/css/projects.min.css" />
-    <link rel="stylesheet" href="./src/css/hero.min.css" />
-    <link rel="stylesheet" href="./src/css/header.min.css" />
-    <link rel="stylesheet" href="./src/css/contact.min.css" />
-    <link rel="stylesheet" href="./src/css/about.min.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <title>Ashley Wright</title>
   </head>
@@ -20,8 +16,9 @@
     <!-- PROJECT MODAL -->
     <div class="modal-bg">
       <div class="modal">
-        <div>
+        <div class="modal-container">
           <h2 class="modal-header"></h2>
+          <img class="modal-img" />
           <p class="modal-section-1"></p>
           <h3 class="modal-sub-header">What I learned</h3>
           <p class="modal-section-2"></p>
@@ -67,8 +64,11 @@
       <p>
         Hello! If you're reading this, then I want to join your team! Hopefully, I can be a positive
         addition to both your team and your clients. I am a Full-Stack Web Developer, college
-        graduate and someone who has had a life-long interest in tech. While I specialize in front
-        end development I have full-stack projects for demo below!
+        graduate and someone who has had a life-long interest in tech.
+        <br />
+        <br />
+        I would say I lean towards front-end expertise but I have full-stack projects for demo
+        below! Please click the 'info' button to learn more about my projects 🙂
         <br />
         <br />
       </p>
@@ -189,11 +189,40 @@
           </div>
         </div>
         <!--PROJECT-->
+        <div class="project project__name-chartr fade-in-section">
+          <img
+            class="project__display project__display-chartr"
+            src="./src/assets/geekchartr.webp"
+            alt="Geek Chartr"
+          />
+          <div class="project__info-box">
+            <h2 class="project__info-header">GeekChartr</h2>
+            <p class="project__info-text">
+              GeekChartr is a fullstack personal project, that tracks the daily playcounts of the
+              most played games on BoardGameGeek and visually displays that data with graphs.
+            </p>
+            <div class="project__info-icons">
+              <p>Tech Stack:</p>
+              <iconify-icon icon="skill-icons:aws-dark"></iconify-icon>
+              <iconify-icon icon="logos:javascript"></iconify-icon>
+              <iconify-icon icon="vscode-icons:file-type-node"></iconify-icon>
+              <iconify-icon icon="logos:python"></iconify-icon>
+              <iconify-icon icon="logos:mongodb-icon"></iconify-icon>
+            </div>
+            <div class="project__info-button-container">
+              <a href="https://ashleywrighta.github.io/geek-chartr/">Live Demo</a>
+              <a href="https://github.com/AshleyWrightA/geek-chartr">Code</a>
+              <button class="project__info-button modal-open geekchartr">Info</button>
+            </div>
+          </div>
+        </div>
+        <!--PROJECT-->
         <div class="project project__name-jobrunner fade-in-section">
           <p class="project__in-progress">In Progress</p>
           <img
             class="project__display project__display-jobrunner"
             src="./src/assets/jobrunner.webp"
+            alt="JobRunner"
           />
           <div class="project__info-box">
             <h2 class="project__info-header">JobRunner</h2>
@@ -218,37 +247,11 @@
           </div>
         </div>
         <!--PROJECT-->
-        <div class="project project__name-chartr fade-in-section">
-          <img
-            class="project__display project__display-chartr"
-            src="./src/assets/geekchartr.webp"
-          />
-          <div class="project__info-box">
-            <h2 class="project__info-header">GeekChartr</h2>
-            <p class="project__info-text">
-              GeekChartr is a fullstack personal project, that tracks the daily playcounts of the
-              most played games on BoardGameGeek and visually displays that data with graphs.
-            </p>
-            <div class="project__info-icons">
-              <p>Tech Stack:</p>
-              <iconify-icon icon="skill-icons:aws-dark"></iconify-icon>
-              <iconify-icon icon="logos:javascript"></iconify-icon>
-              <iconify-icon icon="vscode-icons:file-type-node"></iconify-icon>
-              <iconify-icon icon="logos:python"></iconify-icon>
-              <iconify-icon icon="logos:mongodb-icon"></iconify-icon>
-            </div>
-            <div class="project__info-button-container">
-              <a href="https://ashleywrighta.github.io/geek-chartr/">Live Demo</a>
-              <a href="https://github.com/AshleyWrightA/geek-chartr">Code</a>
-              <button class="project__info-button modal-open geekchartr">Info</button>
-            </div>
-          </div>
-        </div>
-        <!--PROJECT-->
         <div class="project project__name-portfolio fade-in-section">
           <img
             class="project__display project__display-portfolio"
             src="./src/assets/portfolio.webp"
+            alt="Portfolio"
           />
           <div class="project__info-box">
             <h2 class="project__info-header">Portfolio Site</h2>
@@ -274,6 +277,7 @@
           <img
             class="project__display project__display-password"
             src="./src/assets/passwordmanager.webp"
+            alt="Password Manager App"
           />
           <div class="project__info-box">
             <h2 class="project__info-header">Password App</h2>

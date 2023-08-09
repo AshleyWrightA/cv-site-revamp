@@ -1,6 +1,8 @@
 export default {
   storefront: {
     title: "Store Demo",
+    img: "",
+    alt: "",
     section_1:
       "This was my first attempt at a major front-end framework project using React, reinforcing fundemental concepts like working with React's components and functional hooks.",
     section_2:
@@ -10,6 +12,8 @@ export default {
   },
   jobrunner: {
     title: "JobRunner",
+    img: "",
+    alt: "",
     section_1: "JobRunner is meant to be a fullstack showcase web app.",
     section_2:
       "Already from this project i've learned in depth about 'Mocking/Stubbing', Authentication, enforcing permissions and using persistant data storage.",
@@ -17,6 +21,8 @@ export default {
   },
   geekchartr: {
     title: "GeekChartr",
+    img: "./src/assets/geekchartrarchitecture.webp",
+    alt: "Geek Chartr Archetecture",
     section_1:
       "Currently, GeekChartr on the frontend simply visualizes BoardGameGeek play data. However it is a fullstack application. Data is carefully scrapped using a python script, on BoardGameGeek.com, where it is stored in a cloud Mongo Database. NodeJS runs the backend on an AWS instance, fetching and preparing the data for the front-end graph display.",
     section_2:
@@ -26,6 +32,8 @@ export default {
   },
   portfolio: {
     title: "Portfolio",
+    img: "",
+    alt: "",
     section_1:
       "This site was a complete from scratch rebuild of my old portfolio site, cleaning up the code and design. Overall it took half as much time to develop compared to my first portfolio. Almost everything is vanilla, barring my use of SCSS and a few libraries, JavaScript is used for all the dynamic elements, and this portfolio fully works on mobile & desktop.",
     section_2:
@@ -34,6 +42,8 @@ export default {
   },
   password: {
     title: "Password Manager",
+    img: "",
+    alt: "",
     section_1:
       "A simple Junior project building software rather than a web application. I kept this project here because I love working with Python!",
     section_2: "Basics of reading & writing data in python and building out a software GUI.",

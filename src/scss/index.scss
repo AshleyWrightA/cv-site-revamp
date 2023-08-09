@@ -22,12 +22,11 @@ border-radius
 
 // IMPORTS USED ONLY ON DEPLOYMENT
 // IMPORTED DIRECTLY INTO INDEX.HTML DURING DEVELOPMENT
-
-// @import "header";
-// @import "hero";
-// @import "about";
-// @import "projects";
-// @import "contact";
+@import "header";
+@import "hero";
+@import "about";
+@import "projects";
+@import "contact";
 
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
@@ -111,8 +110,8 @@ h2 {
 .modal {
   padding: 4rem;
 
-  max-width: 40%;
-  height: 45%;
+  max-width: 45%;
+  height: 60%;
 
   display: flex;
 
@@ -134,6 +133,12 @@ h2 {
 
     position: fixed;
     z-index: 1;
+
+    overflow-y: hidden;
+  }
+
+  &-img {
+    max-width: 80%;
   }
 
   &-sub-header {
@@ -154,6 +159,10 @@ h2 {
     &:hover {
       background-color: white;
     }
+  }
+
+  &-section-3 {
+    padding-bottom: 4rem;
   }
 }
 

@@ -21,8 +21,8 @@ export default {
   },
   geekchartr: {
     title: "GeekChartr",
-    img: "./src/assets/geekchartrarchitecture.webp",
-    alt: "Geek Chartr Archetecture",
+    img: "/assets/geekchartrarchitecture.webp",
+    alt: "Geek Chartr Architecture",
     section_1:
       "Currently, GeekChartr on the frontend simply visualizes BoardGameGeek play data. However it is a fullstack application. Data is carefully scrapped using a python script, on BoardGameGeek.com, where it is stored in a cloud Mongo Database. NodeJS runs the backend on an AWS instance, fetching and preparing the data for the front-end graph display.",
     section_2:

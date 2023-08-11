@@ -99,18 +99,18 @@ function projectInfoModal(sourceButton, data) {
 
   const modalHeader = document.querySelector(".modal-header");
   const modalImage = document.querySelector(".modal-img");
-  const modalSectionOne = document.querySelector(".modal-section-1");
-  const modalSectionTwo = document.querySelector(".modal-section-2");
-  const modalSectionThree = document.querySelector(".modal-section-3");
+  const modalSectionOne = document.querySelector(".modal-summary");
+  const modalSectionTwo = document.querySelector(".modal-learned");
+  const modalSectionThree = document.querySelector(".modal-change");
 
   for (const e in data) {
     if (sourceButton.classList.contains(e)) {
       modalHeader.textContent = data[e].title;
       modalImage.src = data[e].img;
       modalImage.alt = data[e].alt;
-      modalSectionOne.textContent = data[e].section_1;
-      modalSectionTwo.textContent = data[e].section_2;
-      modalSectionThree.textContent = data[e].section_3;
+      modalSectionOne.textContent = data[e].summary;
+      modalSectionTwo.textContent = data[e].learned;
+      modalSectionThree.textContent = data[e].change;
     }
   }
 }

@@ -6,9 +6,10 @@ export function dynamicText() {
     strings: [
       "Problem Solver 🙌",
       "College Graduate 🎓",
-      "Cat Mom 🐱",
-      "Web Developer 📱 + 🖱️",
       "Coffee Addict ☕",
+      "Web Developer 📱 + 🖱️",
+      "Cat Mom 🐱",
+      `React Wizard <iconify-icon icon="twemoji:woman-mage"></iconify-icon>`,
       "History Buff 📖",
       "Techie 👩‍💻",
       "Game Master 🎲",
@@ -17,11 +18,12 @@ export function dynamicText() {
       "BoardGame Geek ♟️",
     ],
     typeSpeed: 80,
-    backSpeed: 80,
+    backSpeed: 60,
     backDelay: 1200,
     loop: true,
     smartBackspace: true,
     shuffle: false,
+    showCursor: true,
   };
 
   const heroDynamicText = new Typed(".hero__dynamic-text", dynamicTextConfig);

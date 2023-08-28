@@ -75,7 +75,7 @@ h2 {
 }
 
 .global-padding {
-  padding-inline: 20%;
+  padding-inline: 15%;
 }
 
 .title-highlight {
@@ -163,6 +163,15 @@ h2 {
 
   &-change {
     padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 1320px) {
+  body {
+    font-size: 2rem;
+  }
+  .global-padding {
+    padding-inline: 12%;
   }
 }
 

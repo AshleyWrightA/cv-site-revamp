@@ -2,12 +2,14 @@
 
 .hero {
   padding-block: 28rem 56rem;
+  padding-inline: 0;
 
   &__container {
-    height: 400px;
+    width: 100vw;
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     h1 {
       font-size: 9.6rem;
@@ -15,20 +17,45 @@
   }
 
   &__dynamic-text-container {
-    width: 80vw;
+    width: 60vw;
 
     display: flex;
+
+    white-space: nowrap;
   }
 
   &__intro {
     padding-top: 4rem;
+  }
+
+  &__icon {
+    width: 80px;
   }
 }
 
 .typed-cursor {
   align-self: center;
   font-size: 8rem;
-  font-style: italic;
+}
+
+@media (max-width: 1320px) {
+  .hero {
+    &__container {
+      h1 {
+        font-size: 7.2rem;
+        text-align: center;
+      }
+    }
+    &__dynamic-text-container {
+      display: block;
+    }
+    &__icon {
+      width: 60px;
+    }
+  }
+  span {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -42,6 +69,9 @@
     &__dynamic-text-container {
       display: block;
     }
+    &__icon {
+      width: 40px;
+    }
   }
   span {
     display: none;
@@ -52,6 +82,16 @@
   .hero {
     &__container {
       height: 200px;
+      h1 {
+        font-size: 3.2rem;
+        text-align: center;
+      }
+    }
+    &__dynamic-text-container {
+      white-space: wrap;
+    }
+    &__icon {
+      width: 25px;
     }
   }
 }

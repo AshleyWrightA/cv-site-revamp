@@ -12,15 +12,15 @@
 
 .project {
   position: relative;
-  left: 10vw;
+  bottom: -10vh;
 
   display: flex;
 
   background-color: $light-accent;
 
   border-radius: 1.6rem;
-  border: 1px solid $primary-colour;
-  box-shadow: 0 0 10px $primary-colour;
+  border: 3px solid $dark;
+  box-shadow: 0 0 6px $dark;
 
   &__display {
     max-width: 60%;

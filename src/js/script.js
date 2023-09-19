@@ -4,18 +4,18 @@ import data from "./data";
 export function dynamicText() {
   const dynamicTextConfig = {
     strings: [
-      "Problem Solver 🙌",
-      "College Graduate 🎓",
-      "Coffee Addict ☕",
-      "Web Developer 📱 + 🖱️",
-      "Cat Mom 🐱",
-      `React Wizard <iconify-icon icon="twemoji:woman-mage"></iconify-icon>`,
-      "History Buff 📖",
-      "Techie 👩‍💻",
-      "Game Master 🎲",
-      "Google-fu Black Belt 🥋",
-      "Green Thumb 🌱",
-      "BoardGame Geek ♟️",
+      `Problem Solver <img class="hero__icon" src='/src/assets/raisinghands.webp' alt='' />`,
+      `College Graduate <img class="hero__icon" src='/src/assets/graduation-cap_1f393.webp' alt='' />`,
+      `Coffee Addict <img class="hero__icon" src='/src/assets/hot-beverage_2615.webp' alt='' />`,
+      `Web Developer <img class="hero__icon" src='/src/assets/mobile-phone_1f4f1.webp' alt='' />+<img class="hero__icon" src='/src/assets/desktop-computer_1f5a5-fe0f.webp' alt='' />`,
+      `Cat Mom <img class="hero__icon" src='/src/assets/cat_1f408.webp' alt='' />`,
+      `React Wizard <img class="hero__icon" src='/src/assets/woman-mage_1f9d9-200d-2640-fe0f.webp' alt='' /><img class="hero__icon" src='/src/assets/react.webp' alt='' /> `,
+      `History Buff <img class="hero__icon" src='/src/assets/open-book_1f4d6.webp' alt='' />`,
+      `Techie <img class="hero__icon" src='/src/assets/woman-technologist_1f469-200d-1f4bb.webp' alt='' />`,
+      `Game Master <img class="hero__icon" src='/src/assets/game-die_1f3b2.webp' alt='' />`,
+      `Google-fu <img class="hero__icon" src='/src/assets/martial-arts-uniform_1f94b.webp' alt='' />`,
+      `Green Thumb <img class="hero__icon" src='/src/assets/seedling_1f331.webp' alt='' />`,
+      `BoardGame Geek <img class="hero__icon" src='/src/assets/chess-pawn_265f-fe0f.webp' alt='' />`,
     ],
     typeSpeed: 80,
     backSpeed: 60,
@@ -24,6 +24,7 @@ export function dynamicText() {
     smartBackspace: true,
     shuffle: false,
     showCursor: true,
+    cursorChar: "_",
   };
 
   const heroDynamicText = new Typed(".hero__dynamic-text", dynamicTextConfig);
@@ -36,12 +37,30 @@ export function fadeInSection() {
   }
 
   function aboutSectionFade() {
-    const fadeInSection = document.querySelector(".fade-in-section");
-    const fadeInSectionRect = fadeInSection.getBoundingClientRect();
-    if (window.innerHeight + window.pageYOffset >= fadeInSectionRect.top) {
-      fadeInSection.style.opacity = "1";
-      fadeInSection.style.transform = "translateY(-50px)";
+    const skillGroups = Array.from(document.querySelectorAll(".skill-fade"));
+
+    if (window.innerHeight >= skillGroups[0].getBoundingClientRect().top) {
+      skillGroups.forEach((element, index) => {
+        setTimeout(() => {
+          element.style.opacity = "1";
+          element.style.transform = "translateY(-10vh)";
+        }, 300 * index);
+      });
     }
+
+    // custom hover element
+    // prevents hover on element before it is visible
+    setTimeout(() => {
+      skillGroups.forEach((element) => {
+        element.style.transition = "0.5s";
+        element.addEventListener("mouseenter", () => {
+          element.classList.add("hovered");
+        });
+        element.addEventListener("mouseleave", () => {
+          element.classList.remove("hovered");
+        });
+      });
+    }, 1500);
   }
 
   function projectFade() {
@@ -50,7 +69,7 @@ export function fadeInSection() {
     fadeInProjects.forEach((element) => {
       if (window.innerHeight >= element.getBoundingClientRect().top) {
         element.style.opacity = "1";
-        element.style.transform = "translateX(-10vw)";
+        element.style.transform = "translateY(-10vh)";
       }
     });
   }

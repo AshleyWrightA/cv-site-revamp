@@ -22,12 +22,11 @@ border-radius
 
 // IMPORTS USED ONLY ON DEPLOYMENT
 // IMPORTED DIRECTLY INTO INDEX.HTML DURING DEVELOPMENT
-@import "header";
-@import "hero";
-@import "about";
-@import "projects";
-@import "contact";
-
+// @import "header";
+// @import "hero";
+// @import "about";
+// @import "projects";
+// @import "contact";
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 
 html {
@@ -75,7 +74,7 @@ h2 {
 }
 
 .global-padding {
-  padding-inline: 15%;
+  padding-inline: 24%;
 }
 
 .title-highlight {
@@ -104,7 +103,7 @@ h2 {
 
 .fade-in-section {
   opacity: 0;
-  transition: opacity 1.4s ease-out, transform 0.8s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .modal {

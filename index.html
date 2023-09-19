@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./src/css/index.min.css" />
     <link rel="stylesheet" href="./src/css/header.min.css" />
     <link rel="stylesheet" href="./src/css/hero.min.css" />
+    <link rel="stylesheet" href="./src/css/about.min.css" />
+    <link rel="stylesheet" href="./src/css/projects.min.css" />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
     <title>Ashley Wright</title>
@@ -34,7 +36,7 @@
       </div>
     </div>
     <!-- HEADER -->
-    <header class="header global-padding" id="header">
+    <header class="header" id="header">
       <a href="#hero" class="header__anchor">
         <div class="header__logo title-wrapper">
           <h1>&lt;</h1>
@@ -58,7 +60,8 @@
         </div>
       </div>
     </section>
-    <section class="about global-padding fade-in-section" id="about">
+    <!-- ABOUT -->
+    <section class="about global-padding" id="about">
       <div class="title-wrapper page-title-wrapper">
         <h1>&lt;</h1>
         <h1 class="about__header title-highlight">About&nbsp;</h1>
@@ -77,15 +80,20 @@
       </p>
       <h2 class="about__header-skill">&lt;Skills&#47;&gt;</h2>
       <div class="about__skill-container">
-        <div class="skill__group">
+        <!-- SKILL GROUP -->
+        <div class="skill__group skill-fade">
           <div class="skill__header">
             <iconify-icon class="skill__icon" icon="material-symbols:code"></iconify-icon>
-            <h2 class="skill__icon-header">Languages & Frameworks</h2>
+            <h2 class="skill__icon-header">Languages<br />& Frameworks</h2>
           </div>
           <div class="skill__element-container">
             <div class="skill__element">
               <p>Javascript</p>
               <iconify-icon icon="logos:javascript"></iconify-icon>
+            </div>
+            <div class="skill__element">
+              <p>TypeScript</p>
+              <iconify-icon icon="devicon:typescript"></iconify-icon>
             </div>
             <div class="skill__element">
               <p>Python</p>
@@ -96,16 +104,8 @@
               <iconify-icon icon="logos:java"></iconify-icon>
             </div>
             <div class="skill__element">
-              <p>HTML</p>
+              <p>HTML/CSS</p>
               <iconify-icon icon="logos:html-5"></iconify-icon>
-            </div>
-            <div class="skill__element">
-              <p>CSS</p>
-              <iconify-icon icon="logos:css-3"></iconify-icon>
-            </div>
-            <div class="skill__element">
-              <p>SQL</p>
-              <iconify-icon icon="mdi:sql-query"></iconify-icon>
             </div>
             <div class="skill__element">
               <p>React</p>
@@ -115,16 +115,43 @@
               <p>Bootstrap</p>
               <iconify-icon icon="logos:bootstrap"></iconify-icon>
             </div>
+            <div class="skill__element">
+              <p>NodeJS</p>
+              <iconify-icon icon="vscode-icons:file-type-node"></iconify-icon>
+            </div>
           </div>
         </div>
-        <div class="skill__group">
+        <!-- SKILL GROUP -->
+        <div class="skill__group skill-fade">
+          <div class="skill__header">
+            <iconify-icon class="skill__icon" icon="mdi:sql-query"></iconify-icon>
+            <h2 class="skill__icon-header">Databases</h2>
+          </div>
+          <div class="skill__element-container">
+            <div class="skill__element">
+              <p>MySQL</p>
+              <iconify-icon icon="devicon:mysql"></iconify-icon>
+            </div>
+            <div class="skill__element">
+              <p>MongoDB</p>
+              <iconify-icon icon="logos:mongodb-icon"></iconify-icon>
+            </div>
+            <div class="skill__element">
+              <p>Firebase</p>
+              <iconify-icon icon="logos:firebase"></iconify-icon>
+            </div>
+          </div>
+        </div>
+        <!-- SKILL GROUP -->
+
+        <div class="skill__group skill-fade">
           <div class="skill__header">
             <iconify-icon class="skill__icon" icon="ant-design:tool-outlined"></iconify-icon>
             <h2 class="skill__icon-header">Tech & Tools</h2>
           </div>
           <div class="skill__element-container">
             <div class="skill__element">
-              <p>Amazon Web Services</p>
+              <p>AWS</p>
               <iconify-icon icon="skill-icons:aws-dark"></iconify-icon>
             </div>
             <div class="skill__element">
@@ -138,6 +165,10 @@
             <div class="skill__element">
               <p>Git</p>
               <iconify-icon icon="logos:git-icon"></iconify-icon>
+            </div>
+            <div class="skill__element">
+              <p>Vite</p>
+              <iconify-icon icon="devicon:vitejs"></iconify-icon>
             </div>
             <div class="skill__element">
               <p>Webpack</p>
@@ -174,7 +205,7 @@
           <div class="project__info-box">
             <h2 class="project__info-header">Ecommerce Demo</h2>
             <p class="project__info-text">
-              An simple Ecommerce demo with a functioning cart, routing and fetching data from a
+              A simple Ecommerce demo with a functioning cart, routing and fetching data from a
               database in the cloud.
             </p>
             <div class="project__info-icons">
@@ -241,7 +272,7 @@
               <iconify-icon icon="logos:react"></iconify-icon>
               <iconify-icon icon="logos:bootstrap"></iconify-icon>
               <iconify-icon icon="logos:sass"></iconify-icon>
-              <iconify-icon icon="mdi:sql-query"></iconify-icon>
+              <iconify-icon icon="logos:mysql"></iconify-icon>
             </div>
             <div class="project__info-button-container">
               <a href="https://github.com/AshWrightA/jobrunner-frontend">Code</a>

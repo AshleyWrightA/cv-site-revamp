@@ -1,21 +1,37 @@
 import Typed from "typed.js";
 import data from "./data";
 
+// Emoji Images imports for /dist
+import raisinghandsImage from "../assets/raisinghands.webp";
+import graduationCapImage from "../assets/graduation-cap.webp";
+import hotBeverageImage from "../assets/hot-beverage.webp";
+import mobilePhoneImage from "../assets/mobile-phone.webp";
+import desktopCompuerImage from "../assets/desktop-computer.webp";
+import catImage from "../assets/cat.webp";
+import womanMageImage from "../assets/woman-mage.webp";
+import reactImage from "../assets/react.webp";
+import openBookImage from "../assets/open-book.webp";
+import womanTechnologistImage from "../assets/woman-technologist.webp";
+import gameDieImage from "../assets/game-die.webp";
+import martialArtsUniformImage from "../assets/martial-arts-uniform.webp";
+import seedlingImage from "../assets/seedling.webp";
+import chessPawnImage from "../assets/chess-pawn.webp";
+
 export function dynamicText() {
   const dynamicTextConfig = {
     strings: [
-      `Problem Solver <img class="hero__icon" src='/src/assets/raisinghands.webp' alt='' />`,
-      `College Graduate <img class="hero__icon" src='/src/assets/graduation-cap_1f393.webp' alt='' />`,
-      `Coffee Addict <img class="hero__icon" src='/src/assets/hot-beverage_2615.webp' alt='' />`,
-      `Web Developer <img class="hero__icon" src='/src/assets/mobile-phone_1f4f1.webp' alt='' />+<img class="hero__icon" src='/src/assets/desktop-computer_1f5a5-fe0f.webp' alt='' />`,
-      `Cat Mom <img class="hero__icon" src='/src/assets/cat_1f408.webp' alt='' />`,
-      `React Wizard <img class="hero__icon" src='/src/assets/woman-mage_1f9d9-200d-2640-fe0f.webp' alt='' /><img class="hero__icon" src='/src/assets/react.webp' alt='' /> `,
-      `History Buff <img class="hero__icon" src='/src/assets/open-book_1f4d6.webp' alt='' />`,
-      `Techie <img class="hero__icon" src='/src/assets/woman-technologist_1f469-200d-1f4bb.webp' alt='' />`,
-      `Game Master <img class="hero__icon" src='/src/assets/game-die_1f3b2.webp' alt='' />`,
-      `Google-fu <img class="hero__icon" src='/src/assets/martial-arts-uniform_1f94b.webp' alt='' />`,
-      `Green Thumb <img class="hero__icon" src='/src/assets/seedling_1f331.webp' alt='' />`,
-      `BoardGame Geek <img class="hero__icon" src='/src/assets/chess-pawn_265f-fe0f.webp' alt='' />`,
+      `Problem Solver <img class="hero__icon" src='${raisinghandsImage}' alt='' />`,
+      `College Graduate <img class="hero__icon" src='${graduationCapImage}' alt='' />`,
+      `Coffee Addict <img class="hero__icon" src='${hotBeverageImage}' alt='' />`,
+      `Web Developer <img class="hero__icon" src='${mobilePhoneImage}' alt='' />+<img class="hero__icon" src='${desktopCompuerImage}' alt='' />`,
+      `Cat Mom <img class="hero__icon" src='${catImage}' alt='' />`,
+      `React Wizard <img class="hero__icon" src='${womanMageImage}' alt='' /><img class="hero__icon" src='${reactImage}' alt='' /> `,
+      `History Buff <img class="hero__icon" src='${openBookImage}' alt='' />`,
+      `Techie <img class="hero__icon" src='${womanTechnologistImage}' alt='' />`,
+      `Game Master <img class="hero__icon" src='${gameDieImage}' alt='' />`,
+      `Google-fu <img class="hero__icon" src='${martialArtsUniformImage}' alt='' />`,
+      `Green Thumb <img class="hero__icon" src='${seedlingImage}' alt='' />`,
+      `BoardGame Geek <img class="hero__icon" src='${chessPawnImage}' alt='' />`,
     ],
     typeSpeed: 80,
     backSpeed: 60,

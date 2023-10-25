@@ -15,6 +15,7 @@
   }
 
   &__dynamic-text-container {
+    height: 20vh;
     width: 60vw;
 
     display: flex;
@@ -32,7 +33,7 @@
 }
 
 .typed-cursor {
-  align-self: center;
+  margin: 0 0 10vh 0;
   font-size: 8rem;
 }
 
